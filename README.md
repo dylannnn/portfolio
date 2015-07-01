@@ -1,2 +1,6 @@
-# portfolio
-My portfolio
+# Portfolio
+My portfolio | 2015
+## Graphic Designer
+...
+## Frontend Developer
+...
