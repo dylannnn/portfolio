@@ -1,26 +1,57 @@
-// out: ../css/main.css, compress: true, strictMath: true
-body {
-  position: relative;
-  background-color: #1d2b2a;
-  background-image: url(/assets/img/stripe.png), url(/assets/img/noise.png);
-  background-repeat: repeat-x, repeat;
-  background-position: 0 0%;
-  background-attachment: fixed;
-  font-size: 21px;
-  font-family: Inconsolata, "Lucida Console", Monaco, Courier, monospace;
-  line-height: 2em;
-  color: #d4f8e3;
-  text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
-  -moz-animation: blinkBG 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
-  -webkit-animation: blinkBG 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
-  animation: blinkBG 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+// out: ../css/main.css, compress: false, strictMath: true
+span {
+-webkit-line-break: none;
 }
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+:focus {
+outline: -webkit-focus-ring-color auto 0px;
+}
+.left {
+	padding: 0;
+}
+.hero {
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.wrapper {
+		padding: 100px 40px;
+		background-color: rgba(0,0,0,0.4);
+		color: white;
+		text-align: center;
+	}
+}
+.right {
+	position: relative;
+	background-color: #1d2b2a;
+	padding: 0;
+	box-sizing: border-box;
+}
+.line {
+	height:100vh;
+	background-image: url(/assets/img/stripe.png);
+	background-repeat: repeat-x, repeat;
+	background-position: 0 0%;
+	background-attachment: fixed;
+	color: #d4f8e3;
+	text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+	-moz-animation: blinkBG 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+	-webkit-animation: blinkBG 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+	animation: blinkBG 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+}
+.noise {
+	height:100vh;
+	background-image: url(/assets/img/noise.png), url(../img/scanlines.gif);
+	background-repeat: repeat;
+	opacity: 0.9;
+}
+.codeWrapper {
+	padding: 20px;
+}
+.typed {
+	font-family: Consolas, Inconsolata, Monaco, monospace;
 }
 
 .typed-cursor{
@@ -75,6 +106,19 @@ body {
     background-position: 0 100%;
   }
 }
+
+@-webkit-keyframes skipRandom {
+  to {
+    background-position: 0 95%;
+  }
+}
+@keyframes skipRandom {
+  to {
+    background-position: 0 95%;
+  }
+}
+
+
 @-moz-keyframes flicker {
   to {
     color: #bddeca;
