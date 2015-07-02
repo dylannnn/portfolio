@@ -30,8 +30,8 @@ outline: -webkit-focus-ring-color auto 0px;
 	box-sizing: border-box;
 }
 .line {
-	height:100vh;
-	background-image: url(/assets/img/stripe.png);
+	height:100%;
+	background-image: url(../img/stripe.png);
 	background-repeat: repeat-x, repeat;
 	background-position: 0 0%;
 	background-attachment: fixed;
@@ -42,8 +42,9 @@ outline: -webkit-focus-ring-color auto 0px;
 	animation: blinkBG 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
 }
 .noise {
-	height:100vh;
-	background-image: url(/assets/img/noise.png), url(../img/scanlines.gif);
+	height:100%;
+	min-height: 100vh;
+	background-image: url(../img/noise.png), url(../img/scanlines.gif);
 	background-repeat: repeat;
 	opacity: 0.9;
 }
