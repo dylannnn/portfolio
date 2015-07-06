@@ -1,4 +1,5 @@
-$(function(){
+$(function () {
+	"use strict";
 	var html = $('html').html();
 	$(".typed").typed({
 		strings: [html],
@@ -20,17 +21,14 @@ $(function(){
 		// attribute to type (null == text)
 		attr: null,
 		// call when done callback function
-		callback: function() {},
+		callback: function () {},
 		// starting callback function before each string
-		preStringTyped: function() {},
+		preStringTyped: function () {},
 		//callback for every typed string
-		onStringTyped: function() {},
+		onStringTyped: function () {},
 		// callback for reset
-		resetCallback: function() {}
+		resetCallback: function () {}
 	});
- });
-
-var switcher = $('.switcher');
-switcher.mouseenter(function () {
-	$('.rightWrapper').addClass('hovered');
 });
+
+var competencyGraph = d3.select("#competency").append("svg").attr("width", "100%").attr("height", 400).append("rect").attr("x", 0).attr("y", 0).attr("width", "100%").attr("height", 400).style("fill", "lightgray");
