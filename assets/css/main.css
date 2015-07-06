@@ -37,11 +37,13 @@ h3 {
   max-width: 80px;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .hero {
   background-image: url(../img/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
 }
 .hero .overLay {
@@ -68,8 +70,33 @@ h3 {
   border-radius: 0;
 }
 .hero .respCol .btn-primary:hover {
-  background-color: rgba(56, 142, 60, 0.6);
+  background-color: #388e3c;
   transition: 0.3s all;
+}
+.intro .respCol {
+  padding-bottom: 10px;
+}
+.usp .respCol {
+  padding-top: 10px;
+}
+.usp .title {
+  margin-left: 110px;
+}
+.usp .uspList .item {
+  list-style: none;
+}
+.usp .uspList .item .icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.usp span.fa {
+  font-size: 28px;
+  color: #388e3c;
+  text-align: center;
+}
+.usp span.text {
+  padding-left: 15px;
 }
 .switcher {
   position: absolute;
@@ -77,34 +104,29 @@ h3 {
 .switcher .wrapper {
   width: 50px;
   height: 50px;
-  background-color: #ffa726;
+  background-color: #388e3c;
   display: block;
 }
 .switcher .wrapper .icon {
   color: white;
-  font-size: 32px;
+  font-size: 24px;
   display: block;
   text-align: center;
+  padding-top: 6px;
 }
 .rightWrapper {
   position: absolute;
   top: 0;
   right: 0;
   width: 600px;
-  -webkit-transform: translate3d(99%, 0, 0);
-  transform: translate3d(99%, 0, 0);
-  transition: transform 0.5s ;
-}
-.rightWrapper.hovered {
   -webkit-transform: translate3d(550px, 0, 0);
   transform: translate3d(550px, 0, 0);
   transition: transform 0.5s ;
 }
-.rightWrapper.visible {
-  visibility: visible;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  transition: transform 0.5s;
+.rightWrapper.hovered {
+  -webkit-transform: translate3d(-50px, 0, 0);
+  transform: translate3d(-50px, 0, 0);
+  transition: transform 0.5s ;
 }
 .right {
   width: 600px;

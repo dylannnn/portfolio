@@ -29,19 +29,8 @@ $(function(){
 		resetCallback: function() {}
 	});
  });
-var switcher = $('.switcher');
-var topPosition = 0;
-$('.hero').mousemove(function(e) {
-	topPosition = e.pageY;
-	console.log("topPosition: " + topPosition);
-	if (topPosition <= 339) {
-		switcher.css('top', topPosition);
-	}
-});
 
+var switcher = $('.switcher');
 switcher.mouseenter(function () {
 	$('.rightWrapper').addClass('hovered');
-	$('.hero').unbind('mousemove');
-}).mouseout(function () {
-	$('.rightWrapper').removeClass('hovered');
 });
