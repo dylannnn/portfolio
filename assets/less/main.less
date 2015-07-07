@@ -6,6 +6,7 @@ span {
 body {
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
+	font-size: 16px;
 }
 h1, h2, h3 {
 	margin: 8px 0;
@@ -36,6 +37,9 @@ outline: -webkit-focus-ring-color auto 0px;
 	margin: 0 auto;
 	margin-top: 20px;
     margin-bottom: 20px;
+	&.white {
+		background-color: white;
+	}
 }
 @primary-100: #C8E6C9;
 @primary-500: #4CAF50;
@@ -50,10 +54,13 @@ outline: -webkit-focus-ring-color auto 0px;
     background-position: center center;
 	background-attachment: fixed;
 	.overLay {
-		background-color: rgba(0,0,0,0.6);
+		background-color: rgba(0,0,0,0.7);
 		margin: 0;
 	}
 	.respCol {
+		padding: 100px 0;
+		color: white;
+		text-align: center;
 		h1 {
 			font-size: 4em;
 		}
@@ -61,9 +68,10 @@ outline: -webkit-focus-ring-color auto 0px;
 			font-size: 2em;
 			font-weight: 100;
 		}
-		padding: 100px 0;
-		color: white;
-		text-align: center;
+		.tagLine {
+			font-weight: 100;
+			font-size: 20px;
+		}
 		.btn-primary {
 			background-color: transparent;
 			border:1px solid white;
@@ -89,13 +97,14 @@ outline: -webkit-focus-ring-color auto 0px;
     .title {
         margin-left: 110px;
 		font-weight: bold;
+		margin-bottom: 20px;
     }
     .uspList {
         .item{
             list-style: none;
             .icon {
                 width: 50px;
-                height: 50px;
+                height: 40px;
                 display:inline-block;
 				&:hover {
 					transform: rotate(-30deg);

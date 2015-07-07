@@ -6,6 +6,7 @@ span {
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  font-size: 16px;
 }
 h1,
 h2,
@@ -39,6 +40,9 @@ h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.breaker.white {
+  background-color: white;
+}
 .hero {
   background-image: url(../img/heroImage2.png);
   background-repeat: no-repeat;
@@ -47,7 +51,7 @@ h3 {
   background-attachment: fixed;
 }
 .hero .overLay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   margin: 0;
 }
 .hero .respCol {
@@ -61,6 +65,10 @@ h3 {
 .hero .respCol h2 {
   font-size: 2em;
   font-weight: 100;
+}
+.hero .respCol .tagLine {
+  font-weight: 100;
+  font-size: 20px;
 }
 .hero .respCol .btn-primary {
   background-color: transparent;
@@ -82,13 +90,14 @@ h3 {
 .usp .title {
   margin-left: 110px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .usp .uspList .item {
   list-style: none;
 }
 .usp .uspList .item .icon {
   width: 50px;
-  height: 50px;
+  height: 40px;
   display: inline-block;
 }
 .usp .uspList .item .icon:hover {
