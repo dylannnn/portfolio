@@ -34,7 +34,7 @@ h3 {
 }
 .breaker {
   height: 4px;
-  background-color: #388e3c;
+  background-color: #ff5353;
   max-width: 80px;
   margin: 0 auto;
   margin-top: 20px;
@@ -78,7 +78,7 @@ h3 {
   border-radius: 0;
 }
 .hero .respCol .btn-primary:hover {
-  background-color: #388e3c;
+  background-color: #ff5353;
   transition: 0.3s all;
 }
 .intro .respCol {
@@ -108,7 +108,7 @@ h3 {
 }
 .usp span.fa {
   font-size: 28px;
-  color: #388e3c;
+  color: #ff5353;
   text-align: center;
 }
 .usp span.text {
@@ -120,7 +120,7 @@ h3 {
 .switcher .wrapper {
   width: 50px;
   height: 50px;
-  background-color: #388e3c;
+  background-color: #ff5353;
   display: block;
 }
 .switcher .wrapper .icon {
